@@ -1,0 +1,349 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API documentation for Admin users",
+    "version": "v1"
+  },
+  "paths": {
+    "/courses": {
+      "get": {
+        "summary": "list courses",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "post": {
+        "summary": "create course",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Hr Fundimentals"
+                },
+                "description": {
+                  "type": "text",
+                  "example": "test description data"
+                },
+                "credits": {
+                  "type": "integer",
+                  "example": 60
+                },
+                "department_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    },
+    "/courses/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "type": "string",
+          "description": "id",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "show course",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "patch": {
+        "summary": "update course",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Hr Fundimentals"
+                },
+                "description": {
+                  "type": "text",
+                  "example": "test description data"
+                },
+                "credits": {
+                  "type": "integer",
+                  "example": 60
+                },
+                "department_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "put": {
+        "summary": "update course",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Hr Fundimentals"
+                },
+                "description": {
+                  "type": "text",
+                  "example": "test description data"
+                },
+                "credits": {
+                  "type": "integer",
+                  "example": 60
+                },
+                "department_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "delete": {
+        "summary": "delete course",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    },
+    "/genders": {
+      "get": {
+        "summary": "list genders",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "post": {
+        "summary": "create gender",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Hr Fundimentals"
+                },
+                "description": {
+                  "type": "text",
+                  "example": "test description data"
+                },
+                "credits": {
+                  "type": "integer",
+                  "example": 60
+                },
+                "department_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    },
+    "/students": {
+      "get": {
+        "summary": "list students",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "post": {
+        "summary": "create student",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "first_name": {
+                  "type": "string",
+                  "example": "John"
+                },
+                "last_name": {
+                  "type": "string",
+                  "example": "Doe"
+                },
+                "age": {
+                  "type": "integer",
+                  "example": 25
+                },
+                "gender_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    },
+    "/students/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "type": "string",
+          "description": "id",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "show student",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "patch": {
+        "summary": "update student",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "post",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "first_name": {
+                  "type": "string",
+                  "example": "John"
+                },
+                "last_name": {
+                  "type": "string",
+                  "example": "Doe"
+                },
+                "age": {
+                  "type": "integer",
+                  "example": 25
+                },
+                "gender_id": {
+                  "type": "integer",
+                  "example": 1
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "put": {
+        "summary": "update student",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      },
+      "delete": {
+        "summary": "delete student",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "list students",
+        "responses": {
+          "200": {
+            "description": "successful"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "basic": {
+      "type": "basic"
+    },
+    "apiKey": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "query"
+    }
+  }
+}
